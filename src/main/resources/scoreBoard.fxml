@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ScoreBoardController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Statistics" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="50.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin></Label>
+      <TableView fx:id="dataTable" prefHeight="300.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="playerCol" prefWidth="465.0" text="Player" />
+          <TableColumn fx:id="stepCol" prefWidth="465.0" text="StepCounter" />
+        </columns>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </TableView>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="42.0" prefWidth="221.0" text="Back to main menu">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

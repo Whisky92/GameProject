@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="outerStackPane" prefHeight="630.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StartController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Table Game" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="140.0" />
+               </font>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+            </Label>
+            <Button fx:id="playButton" mnemonicParsing="false" onAction="#handleStartButton" prefHeight="100.0" prefWidth="300.0" text="Play">
+               <font>
+                  <Font name="Times New Roman Bold" size="45.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="statsButton" mnemonicParsing="false" onAction="#handleScoreboardButton" prefHeight="100.0" prefWidth="300.0" text="Statistics">
+               <font>
+                  <Font name="Times New Roman Bold" size="45.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
